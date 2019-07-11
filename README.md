@@ -19,7 +19,7 @@ The SKR does not fit as-is into the original housing, but you can print new boxe
 ## Step 1 - Remove Melzi Board
 The original board that came with the Ender 3 will have to be removed. 
 
-There are 3 M3 screws on the top, and one M3 screw on the bottom of the control box that will have to be removed to loosen the original housing. Mark each cable to make rewiring easier.
+There are three M3 screws on the top, and one M3 screw on the bottom of the control box that will have to be removed to loosen the original housing. Mark each cable to make rewiring easier.
 
 > Note! Depending on the Ender 3 version, you'll have to remove their cable mangement (ties and tape) to loosen up the connectors going to each component).
 
@@ -51,6 +51,7 @@ Most TMC2208 drivers come sold in standalone/legacy mode; they behave like simpl
 
 ### TMC2208 UART (some drivers, also solderdable)
 Some drivers come sold with UART mode already enabled, but it is also possible to modify standalone drivers. Enabling UART will require soldering two pads on the bottom of each driver. Use the following jumper settings to enable UART functionality.
+
 ![TMC2208 UART Jumpers](TMC2208UART-Jumpers.png)
 
 ## Step 4 - Wire the SKR
@@ -58,6 +59,8 @@ Mount the SKR on the newly printed box, then wire each cable from the original s
 
 ## Step 5 - Flash new firmware
 The SKR should now power on with a red LED, but the stock display will remain blank and won't respond to any input. A new Marlin build can be created to enable the display as well as SD and other functionality.
+
+Follow the [Marlin Installation Instructions for PlatformIO](http://marlinfw.org/docs/basics/install_platformio.html) to set up a new copy of Marlin and compile it for the SKR board.
 
 ## You're done!
 You've made it to the bottom of the guide. Some further reading and resources that might be useful:
